@@ -1,0 +1,13 @@
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local Whitelist = {
+    ["opstrx1"] = true,
+    ["Raichanbh_244"] = true,
+    ["3"] = true
+}
+
+if not Whitelist[LocalPlayer.Name] then
+    LocalPlayer:Kick("BUY WHITELIST")
+    return
+end
